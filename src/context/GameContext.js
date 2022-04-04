@@ -1,23 +1,21 @@
-import { createContext, useContext } from 'react';
+import { createContext, useContext, useState } from 'react';
+import App from '../App';
 
 const GameContext = createContext();
 
 const GameContextFunct = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(getUser());
-  const handleLogout = async () => {
-    await logout();
-    setCurrentUser('');
+  const [playerOneHand, setPlayerOneHand] = useState([]);
+  const [playerTwoHand, setPlayerTwoHand] = useState([]);
+  const [playerThreeHand, setPlayerThreeHand] = useState([]);
+
   };
 
-  return <GameContext.Provider value={{ currentUser, setCurrentUser }}> {children} </GameContext.Provider>;
+  return <GameContext.Provider value={{ playerOneHand, playerTwoHand, playerThreeHand }}> {children} </GameContext.Provider>;
 };
 
 const useGameContext = () => {
   const context = useContext(GameContext);
 
-  if (context === undefined) {
-    throw new Error('this is an error on GameContext.js');
-  } return context;
 };
 
 export { GameContextFunct, useGameContext };
