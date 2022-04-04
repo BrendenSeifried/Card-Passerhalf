@@ -52,7 +52,7 @@ function App() {
       <section>
         {selectedCard && (
           <ExecutePassButton
-      
+            cards={deck}
             setFrom={setFrom}
             from={from}
             to={to}
