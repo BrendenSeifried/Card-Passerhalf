@@ -5,7 +5,7 @@ import Card from './Card';
 
 export default function ExecutePassButton() {
   const { playerOneHand, playerTwoHand, playerThreeHand, setPlayerOneHand, setPlayerTwoHand, setPlayerThreeHand, deck, setDeck, to, from, setSelectedCard, selectedCard, setFrom } = useGameContext();
-  
+
   function findCardIndex(value, suit, cards) {
     return cards.findIndex((card) => card.value === value && card.suit === suit);
   }
@@ -16,7 +16,6 @@ export default function ExecutePassButton() {
  
     
     const playerHands = [playerOneHand, playerTwoHand, playerThreeHand];
-    // const playerHands = [PlayerTwoHand, playerThreeHand];
     const playerHandSetFunctions = [setPlayerOneHand, setPlayerTwoHand, setPlayerThreeHand];
 
     // arrays start at zero, but our players start at 1 :shrug:
