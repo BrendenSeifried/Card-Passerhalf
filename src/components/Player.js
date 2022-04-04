@@ -4,7 +4,7 @@ import CardList from './CardList';
 export default function Player({
   player,
   setTo,
-  hand,
+  hand,              ///hand only used here
   setFrom,
   setSelectedCard,
   selectedCard,
