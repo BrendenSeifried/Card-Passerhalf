@@ -10,6 +10,8 @@ export default function Player({
   selectedCard,
   to,
 }) {
+
+  // const { to, player, setTo, playerOneHand, playerTwoHand  }
   return (
     <div
       className={`player ${to === player ? 'selected-player' : ''}`}
