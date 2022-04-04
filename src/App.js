@@ -8,7 +8,6 @@ import { useGameContext } from './context/GameContext';
 
 
 function App() {
-  // const { playerOneHand, playerTwoHand, playerThreeHand, deck, to, from, setSelectedCard, selectedCard, setFrom, setTo } = useGameContext();
 
   const { deck, playerOneHand, playerTwoHand, playerThreeHand, selectedCard } = useGameContext();
 
