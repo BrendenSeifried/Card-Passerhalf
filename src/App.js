@@ -10,7 +10,7 @@ import { useGameContext } from './context/GameContext';
 function App() {
   // const { playerOneHand, playerTwoHand, playerThreeHand, deck, to, from, setSelectedCard, selectedCard, setFrom, setTo } = useGameContext();
 
-  const { playerOneHand, playerTwoHand, playerThreeHand, selectedCard } = useGameContext();
+  const { deck, playerOneHand, playerTwoHand, playerThreeHand, selectedCard } = useGameContext();
 
   return (
     <div className="App">
@@ -44,7 +44,7 @@ function App() {
           // setSelectedCard={setSelectedCard}
         />
         <CardList
-          // cards={deck}
+          cards={deck}
           // selectedCard={selectedCard}
           // setSelectedCard={setSelectedCard}
           // setFrom={setFrom}
