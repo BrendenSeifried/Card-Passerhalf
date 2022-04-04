@@ -30,7 +30,7 @@ const useGameContext = () => {
   const context = useContext(GameContext);
   
   if (context === undefined) {
-    // throw new Error('Error on GameContext');
+    throw new Error('Error on GameContext');
   }
   
   return context;
