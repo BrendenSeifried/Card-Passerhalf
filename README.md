@@ -1,3 +1,6 @@
+1) make context in index
+2) refactor?
+
 # React Half Baked Card Passer Challenge
 
 ## Demo
